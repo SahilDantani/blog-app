@@ -1,11 +1,11 @@
 <%- include("partials/header"); -%>
 
 <h1>Home</h1>
-<p><%= homeStartingContent %></p>
+<p style="padding-left: 4px;"><%= homeStartingContent %></p>
 
 <% postArray.forEach(function(post){ %>
     <h1><%= post.titleInput %></h1>
-   <p><%= post.postInput.substring(0,100) + " ..." %><a href="/posts/<%= post._id %>">read me</a></p>
+   <p style="padding-left: 5px;"><%= post.postInput.substring(0,100) + " ..." %><a href="/posts/<%= post._id %>">read me</a></p>
 <% }) %> 
 <%- include("partials/footer"); -%>
 
